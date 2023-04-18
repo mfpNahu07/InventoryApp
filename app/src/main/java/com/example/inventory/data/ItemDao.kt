@@ -22,7 +22,7 @@ interface ItemDao {
     fun getItems(): Flow<List<Item>>
 
     /*
-    * sar Flow o LiveData como tipo de datos garantizará que se te notifique cuando cambien los
+    *  Usar Flow o LiveData como tipo de datos garantizará que se te notifique cuando cambien los
     *  datos de la base de datos. Se recomienda usar Flow en la capa de persistencia. Room mantiene
     *  este Flow actualizado por ti, lo que significa que solo necesitas obtener los datos de forma
     *  explícita una vez. Esto es útil para actualizar la lista de inventario, que implementarás en
